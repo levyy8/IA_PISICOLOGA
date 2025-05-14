@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Psicóloga</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        
+        function consultar() {
+            var texto = document.querySelector("textarea").value;
+            if (texto.trim() !== "") {
+                document.getElementById("mensagem").innerHTML = "Complicado isso...";
+            } else {
+                document.getElementById("mensagem").innerHTML = "Por favor, digite algo antes de consultar.";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Janeye - A IA Psicóloga</h1>
+    <h2>Me conte seus problemas</h2>
+    <h3>"Digite algo..."</h3>
+
+    <textarea style="width: 400px; height: 200px;"></textarea>
+
+    <div>
+      
+        <button onclick="consultar()">Consultar</button>
+    </div>
+
+    <p id="mensagem"></p>
+</body>
+</html>
